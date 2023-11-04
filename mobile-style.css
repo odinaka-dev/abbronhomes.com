@@ -1,0 +1,826 @@
+/* the harmburger pattrn styles goes in here */
+@media screen and (max-width: 840px) {
+/* about page css styles begins from here */
+    #slider-revolution {
+        text-align: center;
+        padding: 10px;
+        padding-left: 10px;
+        padding-top: 70px;
+        font-family: system-ui;
+    }
+    .header-grid {
+        text-align: left;
+        display: block;
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+    .sec-btn button {
+        color: white;
+        background-color: rgba(218, 112, 46, 0.778);
+        border: 1px solid transparent;
+        padding: 15px 30px;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    #starter-about {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        margin-top: 20px;
+    }
+    #starter-about div {
+        background-color:rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 20px 40px;
+        padding-bottom: 40px;
+        text-align: center;
+        border-radius: 10px;
+    }
+    #starter-about h3 {
+        font-weight: 800;
+        font-size: 24px;
+        padding-bottom: 7px;
+        margin-top: 20px;
+    }
+    #starter-about p {
+        font-weight: 400;
+        font-size: 18px;
+    }
+    #sub-section-mai div p {
+        color: white;
+        padding: 0px;
+        text-align: center;
+        font-size: 19px;
+        font-weight: 450;
+        line-height: 1.5;
+    }
+    /* .flex-main-info {
+        color: white;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+    .flex-main-info ol {
+        display: inline-flex;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 25px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .flex-main-info ol li {
+        margin-left: 16px;
+        margin-bottom: 15px;
+        font-weight: 560;
+        padding: 13px 19px;
+        border: 1px solid white;
+        border-radius: 5px;
+    } */
+    /* .flex-main-info ol {
+        display: ;
+        margin-top: 80px;
+    } */
+    .flex-main-info {
+        display: block;
+    }
+}
+/* the mobile dev responsive designs styles as well as the navigation show-link styles */
+/* the navigation */
+@media screen and (max-width: 620px){
+    .navbar-toggle {
+        display: inline-flex;
+        visibility: visible;
+        margin-left: 120px;
+    }
+    nav ul {
+        position: absolute;
+        top: 92px;
+        left: 0px;
+        display: block;
+        background-color: rgba(182, 75, 9, 0.92);
+        padding: 50px;
+        height: 40vh;
+        float: right;
+        margin-right: 0px;
+        transform: translate(-100%);
+        transition: .5s ease-out;
+    }
+    nav ul li {
+        margin-top: 20px;
+    }
+    nav ul li a {
+        color: #fff;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    .harmburger-menu-bar {
+        display: block;
+        color: white;
+        float: right;
+        margin-top: 10px;
+    }
+    #theme-toggle {
+        color: white;
+        cursor: pointer;
+        display: none;
+    }
+    /* THE MAIN HOME-PAGE GRID LAYOUT */
+    .landed {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+        grid-row-gap: 40px;
+        margin-top: 50px;
+    }
+    /* THE FOOTER PAGE  */
+    footer {
+        background-color: rgb(103, 27, 0);
+        color: white;
+        margin-top: 80px;
+        padding: 25px 40px;
+        padding-bottom: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 425px){
+    .show-sidebar {
+        transform: translate(0%);
+    }
+    #sub-body {
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    .navbar-toggle {
+        display: inline-flex;
+        visibility: visible;
+        margin-left: 120px;
+    }
+    nav ul {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: block;
+        background-color: rgba(182, 75, 9, 0.92);
+        padding: 50px;
+        height: 40vh;
+        float: right;
+        margin-right: 0px;
+        transform: translate(-100%);
+        transition: .5s ease-out;
+    }
+    nav ul li {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .link-init {
+        margin-left: 30px;
+        border: 1px solid #fff;
+        width: 20px;
+    }
+    nav ul li a {
+        color: #fff;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    .harmburger-menu-bar {
+        display: block;
+        color: white;
+        float: right;
+        margin-top: 10px;
+    }
+    #theme-toggle {
+        color: white;
+        cursor: pointer;
+        display: none;
+    }
+    /* the rest of the homepage responsive web-design styles begins
+    from here on out CODE LINE 166 */
+    .search-one {
+        display: block;
+    }
+    .query-box {
+        align-items: center;
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+    .search-label {
+        background-color: rgb(103, 27, 0);
+        align-items: center;
+        padding: 8px 13px;
+        padding-bottom: 8px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .search-input {
+        width: 300px;
+        padding: 13px 2px;
+        padding-bottom: 8px;
+        padding-left: 10px;
+        font-size: 14px;
+        font-weight: 200;
+        border-radius: 10px;
+    }
+    .dont-mind {
+        text-align: left;
+    }
+    .dont-mind h2 {
+        font-weight: 800;
+        font-size: 28px;
+        color: rgb(103, 27, 0);
+    }
+    .dont-mind p {
+        color: rgb(103, 27, 0);
+        font-weight: 500;
+        font-size: 16px;
+    }
+    
+    .fav-love {
+        position: absolute;
+        top: 20px;
+        left: 320px;
+        opacity: 0.7;
+        cursor: pointer;
+    }
+    .landed {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        grid-row-gap: 40px;
+        margin-top: 50px;
+    }
+    .light-example {
+        visibility: hidden;
+        display: block;
+        position: fixed;
+        z-index: 1;
+        /* top: 0px;
+        left: 0%; */
+        width: 80%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.801);
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 20px;
+        padding-bottom: 0px;
+    }
+    .light-example:target {
+        visibility: visible;
+        top: 90px;
+        left: 0px;
+    }
+    .specialty {
+        background-color: white;
+        padding: 0px 20px;
+        padding-bottom: 20px;
+        margin-top: 10px;
+        border: 0px;
+        border-radius: 5px;
+    }
+    .content-two {
+        margin-left: 10px;
+    }
+    .content-two h5 {
+        color: rgb(103, 27, 0);
+        font-weight: 900;
+        letter-spacing: 5px;
+        word-spacing: 3px;
+    }
+    .content-two h1 {
+        font-size: 22px;
+    }
+    .content-two p {
+        color: rgb(74, 73, 73);
+        font-weight: 550;
+        font-size: 13px;
+        line-height: 1.6;
+        margin-top: 10px;
+    } 
+    .content-btn {
+        color: white;
+        background-color: rgb(103, 27, 0);
+        border: 0px;
+        border-radius: 8px;
+        padding: 10px 100px;
+        margin-top: 20px;
+    }
+    .close {
+        position: relative;
+        top: 5px;
+        bottom: 0px;
+        margin-left: 250px;
+    }
+    .lightbox-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr
+        );
+        vertical-align: center;
+        top: 10px;
+        color: black;
+    }
+    /* about page styling */
+    #slider-revolution {
+        text-align: center;
+        padding: 3px;
+        padding-left: 3px;
+        padding-top: 35px;
+        font-family: system-ui;
+    }
+    .revolution h2 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+    .revolution p {
+        line-height: 1.5;
+        font-size: 13px;
+    }
+    /* .tag-init {
+        margin: 15px 170px;
+        border: 1px solid white;
+    } */
+    #starter-about {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        margin-top: 20px;
+    }
+    .header-grid {
+        text-align: left;
+        display: block;
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+    .header-grid div h2 {
+        font-weight: 900;
+        font-size: 30px;
+        color: rgb(103, 27, 0);
+    }
+    .header-grid div p {
+        color: black;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    #session {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* display: grid;
+        grid-template-columns: 40% 50%; */
+        margin-top: 100px;
+        padding: 20px 0px;
+    }
+    .grid-one img{
+        width: 100%;
+        height: 80%;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    #sub-section-mai div p {
+        color: lightslategray;
+        line-height: 1.5;
+        padding: 0px;
+        text-align: left;
+        font-size: 13px;
+        font-weight: 450;
+    }
+    /* .flex-main-info {
+        color: white;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+    .flex-main-info ol {
+        display: inline-flex;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 25px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .flex-main-info ol li {
+        margin-left: 16px;
+        margin-bottom: 15px;
+        font-weight: 560;
+        padding: 13px 19px;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+    .flex-main-info ol li:hover {
+        color: black;
+        background-color: white;
+        border: 1px solid white;
+        transition: .5s;
+    } */
+    .flex-main-info ol {
+        display: block;
+        margin-top: 80px;
+    }
+    .flex-main-info ol li {
+        margin: 15px 10px;
+        background-color: white;
+        border: 0px;
+        border-radius: 13px;
+        padding: 5px 0px;
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+    .flex-main-info ol li img {
+        width: 100%;
+        height: 30vh;
+        border-top-right-radius: 13px;
+        border-top-left-radius: 13px;
+    }
+    .hotel-text {
+        color: black;
+        text-align: left;
+        padding: 10px;
+        padding-bottom: 3px;
+        font-size: 13px;
+    }
+    .hotel-text p {
+        color: lightslategray;
+        line-height: 1.6;
+        padding: 0px 13px 0px 0px;
+    }
+
+    /* making the contact page responsive */
+
+    /* .for-section {
+        display: block;
+        padding: 70px 0px;
+    }
+    .form-one {
+        margin-right: 30px;
+        color: rgb(103, 27, 0);
+    }
+     .contact-number {   
+    } 
+    .contact-number2 h5, .contact-number3 h5{
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
+    .form-two {
+        margin-top: 40px;
+    }
+    .form-two form input, select{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .name, .password, .email {
+        padding: 15px 0px;
+        width: 350px;
+        padding-left: 9px;
+        font-size: 16px;
+    
+    }
+    select {
+        padding: 9px 17px;
+        text-transform: capitalize;
+        font-size: 14px;
+    }
+    textarea {
+        padding: 6px;
+    }
+    .name, .password, .email, select, textarea {
+        color: rgb(103, 27, 0);
+        background-color: rgba(229, 172, 136, 0.483); 
+        border: 0px solid transparent;
+        border-radius: 4px;
+    }
+    .submit{
+        padding: 10px 40px;
+        margin-left: 120px;
+        color: rgb(116, 39, 11);
+        border: 1px solid rgb(103, 27, 0);
+        text-transform: uppercase;
+        font-weight: 740;
+        border-radius: 5px;
+    } */
+
+    
+    /* contact us styles begins from here  */
+    #contact-us-main {
+        max-width: 480px;
+        margin: 0 auto;
+        position: relative;
+        bottom: 0px;
+        z-index: -1;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* background-color: rgba(218, 112, 46, 0.778); */
+        background-color: white;
+        color: black;
+        padding: 20px 20px;
+        border: 0px;
+        border-radius: 20px;
+        box-shadow: 0px 15px 55px 15px rgba(194, 194, 195, 0.52);
+    }
+    .contact-one {
+        margin-left: 0px;
+        padding: 30px 0px;
+    }
+    form input, form select, form textarea {
+        display: block;
+        color: rgb(103, 27, 0);
+    }
+    .name, .email, select, textarea {
+        width: 90%;
+        padding: 20px 10px;
+        margin: 20px 0px;
+        border: 0px;
+        border-bottom: 1px solid rgb(103, 27, 0);
+        color: rgb(103, 27, 0);
+    }
+    .submit {
+        background-color: rgb(103, 27, 0);
+        color: #ffff;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 14px 70px;
+        border: 0px;
+        border-radius: 10px;
+        margin-left: 60px;
+    }
+    .contact-us-two {
+        color: rgb(103, 27, 0);
+        margin-top: 10px;
+        margin-right: 0px;
+    }
+    .accordion {
+        margin: 45px 0px;
+        border-bottom: 1px solid rgb(103, 27, 0);
+        text-transform: capitalize;
+    }
+    .title-icons {
+        display: grid;
+        grid-template-columns: 80% 20%;
+    }
+    .title-icons img {
+        float: right;
+    }
+    .accordion .faq-expand, 
+    .accordion .faq-expand2, 
+    .accordion .faq-expand3,
+    .accordion .faq-expand4
+    {
+        display: none;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.9;
+        transform: rotate(360deg);
+        text-transform: lowercase;
+        /* transition: 3s; */
+        margin-top: 15px;
+    }
+    .icon-minus-plus .expand-less,
+     .icon-minus-plus .expand-less2, 
+    .icon-minus-plus .expand-less3,
+    .icon-minus-plus .expand-less4 
+    {
+        display : none;
+    }
+    
+    /* the responsive footer begins from here */
+    footer {
+        background-color: rgb(103, 27, 0);
+        color: white;
+        margin-top: 80px;
+        padding: 25px 10px;
+        /* padding-bottom: 40px; */ 
+        display: block;
+        text-align: center;
+    }
+    .footer-loogo-one p {
+        font-size: 15px;
+        line-height: 1.7;
+        margin: 10px 0px;
+    }
+    .footer-nav-two ol{
+        display: block;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .footer-nav-two ol li {
+        margin-left: 0px;
+        font-size: 24px;
+        margin-top: 30px;
+    }
+    .footer-nav-two ol li a {
+        color: white;
+        align-items: center;
+        font-weight: 450;
+    }
+    .footer-nav-two ol li a:hover {
+        color: lightgrey;
+        cursor: pointer;
+        transition: .5s;
+    }
+     .footer-image-three {
+        margin-left: 0px;
+
+    }
+    .footer-image-three img {
+        margin-top: 47px;
+        margin-left: 30px;
+        text-align: center;
+    } 
+}
+/* sub-mobile responsive layoutof the webpage */
+@media screen and (max-width: 375px){
+    /* the navigation showlink */
+    .show-sidebar {
+        transform: translate(0%);
+    }
+    #sub-body {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    nav ul {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: block;
+        background-color: rgba(182, 75, 9, 0.92);
+        padding: 50px;
+        height: 40vh;
+        float: right;
+        margin-right: 0px;
+        transform: translate(-100%);
+        transition: .5s ease-out;
+    }
+    nav ul li {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .link-init {
+        margin-left: 30px;
+        border: 1px solid #fff;
+        width: 20px;
+    }
+    nav ul li a {
+        color: #fff;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    /* about page styling */
+    #slider-revolution {
+        text-align: center;
+        padding: 3px;
+        padding-left: 3px;
+        padding-top: 75px;
+        font-family: system-ui;
+    }
+    .revolution h2 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+    .revolution p {
+        line-height: 1.5;
+        font-size: 16px;
+    }
+    .revolution p {
+        line-height: 1.5;
+        font-size: 12px;
+    }
+    #starter-about {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        margin-top: 20px;
+    }
+    .header-grid {
+        text-align: left;
+        display: block;
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+    .header-grid div h2 {
+        font-weight: 900;
+        font-size: 30px;
+        color: rgb(103, 27, 0);
+    }
+    .header-grid div p {
+        color: black;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    #session {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* display: grid;
+        grid-template-columns: 40% 50%; */
+        margin-top: 100px;
+        padding: 20px 0px;
+    }
+    .grid-one img{
+        width: 100%;
+        height: 80%;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    #sub-section-mai div p {
+        color: rgba(60, 60, 62, 0.831);
+        padding: 0px;
+        text-align: left;
+        font-size: 12px;
+        font-weight: 450;
+        line-height: 1.6;
+    }
+    /* .flex-main-info {
+        color: white;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+    .flex-main-info ol {
+        display: inline-flex;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 25px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .flex-main-info ol li {
+        margin-left: 16px;
+        margin-bottom: 15px;
+        font-weight: 560;
+        padding: 13px 19px;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+    .flex-main-info ol li:hover {
+        color: black;
+        background-color: white;
+        border: 1px solid white;
+        transition: .5s;
+    } */
+    /*  the new flex-main-css styles for the 
+    about page begins from CODE LINE 407 */
+    .flex-main-info ol {
+        display: block;
+        margin-top: 50px;
+    }
+    .hotel-text {
+        color: black;
+        text-align: left;
+        padding: 10px;
+        padding-bottom: 3px;
+        font-size: 13px;
+    }
+    .hotel-text p {
+        color: lightslategray;
+        line-height: 1.6;
+        padding: 0px 13px 0px 0px;
+    }
+    /* the footer styles for the responsive WIDTH 375px begins
+    from here */
+    footer {
+        background-color: rgb(103, 27, 0);
+        color: white;
+        margin-top: 80px;
+        padding: 25px 40px;
+        /* padding-bottom: 40px; */ 
+        display: block;
+        text-align: center;
+    }
+    .footer-nav-two ol{
+        display: block;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .footer-nav-two ol li {
+        margin-left: 0px;
+        font-size: 24px;
+        margin-top: 30px;
+    }
+    .footer-nav-two ol li a {
+        color: white;
+        align-items: center;
+        font-weight: 450;
+    }
+    .footer-nav-two ol li a:hover {
+        color: lightgrey;
+        cursor: pointer;
+        transition: .5s;
+    }
+     .footer-image-three {
+        margin-left: 0px;
+
+    }
+    .footer-image-three img {
+        margin-top: 47px;
+        margin-left: 30px;
+        text-align: center;
+    } 
+}

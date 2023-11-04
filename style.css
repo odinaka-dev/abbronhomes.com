@@ -1,0 +1,764 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: system-ui;
+    font-size: 16px;
+    /* font-weight: 200; */
+    /* background-color: rgb(70, 70, 70); */
+}
+#navigation-init {
+    color: white;
+    background: rgba(0, 0, 0, 0.801) url(Images/r-architecture-2gDwlIim3Uw-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+    padding-bottom: 20px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+}
+nav {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    animation: nav-load 900ms ease-in;
+}
+label.logo {
+    color: white;
+    font-family: fantasy;
+    font-size: 27px;
+    font-weight: 1000;
+}
+.harmburger-menu-bar {
+    display: none;
+    color: white;
+}
+nav ul {
+    float: right;
+    margin-right: 10px;
+    display: inline-flex;
+}
+nav ul li {
+    margin-right: 20px;
+}
+nav ul li a {
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+nav ul li a:hover {
+    color: #ffffff7a;
+    transition: .5s;
+    cursor: pointer;
+}
+.link-init {
+    margin-left: 10px;
+    border: 1px solid #fff;
+    width: 20px;
+}
+.link-init:hover {
+    color: #ffffff7a;
+    transition: .5s;
+}
+#theme-toggle {
+    color: white;
+    cursor: pointer;
+}
+#theme-toggle:hover {    
+    transform: rotateZ(180deg);
+    transition-duration: 2s;
+}
+/* .show-sidebar {
+    transform: translate(0%);
+} */
+/* @keyframes nav-load {
+    0% {
+        transform: translateX(-100%);
+
+    }
+    100% {
+        transform: translateX(0);
+
+    }
+} */
+/* slider revolution begins from here on- access the home slider text from code line 47. */
+#sub-body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* the grid ent design starts here  */
+
+.landed {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    grid-row-gap: 40px;
+    margin-top: 50px;
+}
+.search-one {
+    display: flex;
+}
+.query-box {
+    align-items: center;
+    margin-left: 350px;
+}
+.search-label {
+    background-color: rgb(103, 27, 0);
+    align-items: center;
+    padding: 8px 13px;
+    padding-bottom: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.search-input {
+    width: 300px;
+    padding: 13px 2px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 200;
+    border-radius: 5px;
+}
+.dont-mind {
+    text-align: left;
+}
+.dont-mind h2 {
+    font-weight: 800;
+    font-size: 28px;
+    color: rgb(103, 27, 0);
+}
+.dont-mind p {
+    color: rgb(103, 27, 0);
+    font-weight: 500;
+    font-size: 16px;
+}
+.prop1, .prop2, .prop3, .prop4 {
+    text-align: left;
+    background-color: white;
+    color: black;
+    position: relative;
+    animation-name: slider-ish 900ms ease-in;
+}
+.prop1 h2, .prop2 h2, .prop3 h2, .prop4 h2 {
+    font-weight: 500;
+    font-size: 18px;
+}
+.prop1 p, .prop2 p, .prop3 p, .prop4 p {
+    color: rgb(72, 75, 78);
+    font-size: 16px;
+}
+.prop1 p b, .prop2 p b, .prop3 p b, .prop4 p b{
+    color: rgb(26, 34, 34);
+}
+.pistol{
+    width: 100%;
+    height: 34vh;
+    border-radius: 20px;
+}
+.fav-love {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.fav-love:hover {
+    opacity: 1.0;
+}
+.prop{
+    margin-top: 150px;
+}
+.pistol:hover {
+    opacity: 0.9;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.green-btn {
+    color: white;
+    background-color: rgb(103, 27, 0);
+    border: 1px solid transparent;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.green-btn a {
+    color: white;
+}
+.green-btn:hover {
+    /* color: rgb(103, 27, 0);
+    background-color: white;
+    border: 1px solid rgb(103, 27, 0); */
+    border-radius: 13px;
+    transition: .6s;
+}
+
+.light-example {
+    visibility: hidden;
+    display: table;
+    position: fixed;
+    z-index: 1;
+    /* top: 0px;
+    left: 0%; */
+    width: 70%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.801);
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+.light-example:target {
+    visibility: visible;
+    top: 90px;
+    left: 0px;
+}
+.specialty {
+    background-color: white;
+    padding: 50px;
+    padding-bottom: 70px;
+    padding-right: 0px;
+    margin-top: 50px;
+    border: 0px;
+    border-radius: 5px;
+}
+.close {
+    position: relative;
+    bottom: 20px;
+    margin-left: 10px;
+}
+.lightbox-content {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    vertical-align: center;
+    top: 10px;
+    color: black;
+}
+.content-two {
+    margin-left: 50px;
+}
+.content-two h5 {
+    color: rgb(103, 27, 0);
+    font-weight: 900;
+    letter-spacing: 5px;
+    word-spacing: 3px;
+}
+.content-two h1 {
+    font-size: 28px;
+}
+.content-two p {
+    color: rgb(74, 73, 73);
+    font-weight: 550;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: 20px;
+} 
+.content-btn {
+    color: white;
+    background-color: rgb(103, 27, 0);
+    border: 0px;
+    border-radius: 8px;
+    padding: 15px 70px;
+    margin-top: 20px;
+}
+/* .content-btn:hover {
+
+} */
+/* .green-btn:hover {
+    
+} */
+footer {
+    background-color: rgb(103, 27, 0);
+    color: white;
+    margin-top: 80px;
+    padding: 25px 40px;
+    padding-bottom: 40px;
+    display: flex;
+}
+.footer-nav-two ol{
+    margin-left: 100px;
+    margin-top: 0px;
+}
+.footer-nav-two ol li {
+    /* margin-left: 40px; */
+    margin-top: 20px;
+}
+.footer-nav-two ol li a {
+    color: white;
+    align-items: center;
+    font-weight: 450;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.footer-nav-two ol li a:hover {
+    color: lightgrey;
+    cursor: pointer;
+    transition: .5s;
+}
+.footer-image-three {
+    margin-left: 70px;
+    margin-top: 20px;
+}
+.footer-image-three img {
+    margin-left: 20px;
+}
+/* about page styles begins here  */
+#slider-revolution {
+    text-align: center;
+    padding: 150px;
+    padding-left: 100px;
+    padding-top: 100px;
+    font-family: system-ui;
+}
+.revolution h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.revolution p {
+    line-height: 1.7;
+    font-size: 16px;
+}
+.tag-init {
+    margin: 15px 170px;
+    border: 1px solid white;
+}
+.first-button {
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+    padding: 14px 28px;
+    margin-top: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.first-button:hover {
+    color: black;
+    background-color: white;
+    font-weight: 600;
+    border: 1px solid #ffffff50;
+    padding: 14px 40px;
+    transition: .5s;
+}
+.second-button {
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+    padding: 14px 28px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.second-button:hover {
+    color: black;
+    background-color: white;
+    font-weight: 800;
+    border: 1px solid #ffffff50;
+    padding: 14px 40px;
+    transition: .3s;
+}
+.header-grid {
+    text-align: left;
+    display: flex;
+    margin-left: 60px;
+    margin-top: 50px;
+}
+.header-grid div h2 {
+    font-weight: 900;
+    font-size: 40px;
+    color: rgb(103, 27, 0);
+}
+.header-grid div p {
+    color: black;
+    font-weight: 500;
+}
+.sec-btn {
+    align-self: center;
+
+}
+.sec-btn button {
+    color: white;
+    background-color: rgba(218, 112, 46, 0.778);
+    border: 1px solid transparent;
+    padding: 15px 30px;
+    margin-left: 160px;
+}
+.sec-btn button:hover {
+    /* animation-name: 'seconry'; */
+    color: rgba(218, 112, 46, 0.778);
+    font-weight: 400px;
+    background-color: white;
+    border: 1px solid rgba(218, 112, 46, 0.778);
+    transition: .5s;
+}
+/* the first about page section begins frin here */
+#starter-about {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+/* #starter-about div {
+    background: rgba(0, 0, 0, 0.801) url(Images/digital-marketing-agency-ntwrk-g39p1kDjvSY-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+    color: white;
+    padding: 20px 40px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius: 10px;
+} */
+.Our-pride {
+    color: white;
+    padding: 20px 40px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+/* background styles begins from  here on out CODE LINE 423 */
+.pride-one {
+    background: rgba(0, 0, 0, 0.801) url(Images/digital-marketing-agency-ntwrk-g39p1kDjvSY-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+}
+.pride-two{
+    background: rgba(0, 0, 0, 0.801) url(Images/fernando-alvarez-rodriguez-M7GddPqJowg-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+}
+.pride-three {
+    background: rgba(0, 0, 0, 0.801) url(Images/andrea-davis-k8WL83m48XY-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+}
+.pride-four{
+    background: rgba(0, 0, 0, 0.801) url(Images/anmol-seth-hDbCjHNdF48-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+}
+.pride-five{
+    background: rgba(0, 0, 0, 0.801) url(Images/francesca-saraco-_dS27XGgRyQ-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+    display: none;
+}
+.pride-six{
+    background: rgba(0, 0, 0, 0.801) url(Images/andrea-davis-k8WL83m48XY-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+}
+.pride-seven{
+    background: rgba(0, 0, 0, 0.801) url(Images/bernard-hermant--IwbJJfoC80-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+}
+.pride-eight{
+    background: rgba(0, 0, 0, 0.801) url(Images/christian-lambert-ycyXpdhCnp8-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+    display: none;
+}
+#starter-about div:hover {
+    box-shadow: 5px 15px 15px rgba(105, 115, 125, 0.254);
+    /* border-top: 10px solid orangered; */
+    transition: 0.5s;
+}
+#starter-about h3 {
+    font-weight: 800;
+    font-size: 20px;
+    padding-bottom: 7px;
+    margin-top: 20px;
+}
+#starter-about p {
+    font-weight: 400;
+    font-size: 10px;
+}
+
+#session {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* display: grid;
+    grid-template-columns: 40% 50%; */
+    margin-top: 100px;
+    padding: 20px 0px;
+}
+main .featured-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0px;
+}
+.grid-one img{
+    width: 100%;
+    height: 80%;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.comfy-heading {
+    padding-right: 30px;
+    padding-left: 40px;
+    align-self: center;
+}
+.comfy-heading h3 {
+    padding: 10px 0px;
+    color: black;
+}
+.comfy-heading p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.8;
+    color: #000;
+}
+.comfy-heading button {
+    color: black;
+    background-color: transparent;
+    font-weight: 750;
+    border: 1px solid black;
+    margin-top: 19px;
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+#sub-section-mai {
+    background: rgba(0, 0, 0, 0.8) url(Images/chastity-cortijo-R-w5Q-4Mqm0-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    padding: 20px;
+}
+#sub-section-mai div h2{
+    color: white;
+    padding: 40px;
+    font-weight: 920;
+    text-align: center;
+}
+.divise-center  {
+    color: white;
+    padding: 0px;
+    text-align: center;
+    font-weight: 450;
+    line-height: 1.5;
+}
+button.mai {
+    color: white;
+    background-color: transparent;
+    font-weight: 750;
+    border: 1px solid white;
+    margin-top: 19px;
+    padding: 10px 40px;
+    border-radius: 5px;
+    vertical-align: center;
+    margin-left: 650px;
+}
+button.mai:hover {
+    color: pink;
+    border: 1px solid pink;
+    cursor: pointer;
+}
+button::after {
+    color: purple;
+    border: 1pxm solid purple;
+    cursor: pointer;
+}
+
+/* the service slide page begins from here on */
+/* .same {
+    width: 100%;
+    height: 100vh; 
+} */
+.flex-main-info {
+    max-width: 1350px;
+    margin: 0px auto;
+}
+.flex-main-info ol {
+    display: flex;
+    margin-top: 60px;
+}
+.flex-main-info ol li {
+    margin: 0px 10px;
+    background-color: white;
+    border: 0px;
+    border-radius: 13px;
+    padding: 5px 0px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+.flex-main-info ol li img {
+    width: 100%;
+    height: 30vh;
+    border-top-right-radius: 13px;
+    border-top-left-radius: 13px;
+}
+.hotel-text {
+    color: black;
+    text-align: left;
+    padding: 10px;
+    padding-bottom: 3px;
+    font-size: 13px;
+}
+.hotel-text p {
+    color: lightslategray;
+    line-height: 1.6;
+    padding: 0px 13px 0px 0px;
+}
+.btn-hotels {
+    margin-top: 20px;
+    color: white;
+    background-color: rgb(103, 27, 0);
+    padding: 8px 13px;
+    border: 0px;
+    border-radius: 5px;
+}
+/* second about page segments */
+#sub-body-notreally {
+    text-align: center;
+    background-image: linear-gradient(135deg, rgb(116, 39, 11),rgb(255, 166, 0));
+    padding: 50px 0px;
+    color: white;
+}
+#sub-body-notreally h1{
+    font-family: system-ui;
+    padding: 10px 0px;
+}
+#sub-body-notreally p {
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+#sub-body-notreally h4 {
+    letter-spacing: 7px;
+}
+#sub-body-notreally button {
+    color: white;
+    background-color: transparent;
+    padding: 10px 18px;
+    margin-top: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+
+/* contact us styles begins from CODE LINE 670 */
+#contact-us-main {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 20px;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* background-color: rgba(218, 112, 46, 0.778); */
+    background-color: white;
+    color: black;
+    padding: 40px;
+    border: 0px;
+    border-radius: 20px;
+    box-shadow: 0px 15px 55px 15px rgba(194, 194, 195, 0.52);
+}
+.contact-one {
+    margin-left: 40px;
+}
+.contact-one h1 {
+    color: rgb(103, 27, 0);
+}
+form {
+    margin-top: 20px;
+}
+form input, form select, form textarea {
+    display: block;
+    color: rgb(103, 27, 0);
+}
+.name, .email, select, textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 20px 0px;
+    border: 0px;
+    border-bottom: 1px solid rgb(103, 27, 0);
+    color: rgb(103, 27, 0);
+}
+.submit {
+    background-color: rgb(103, 27, 0);
+    color: #ffff;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 14px 70px;
+    border: 0px;
+    border-radius: 10px;
+}
+.submit:hover {
+    border: 1px solid rgb(103, 27, 0);
+    background-color: transparent;
+    color: rgb(103, 27, 0);
+    transition: .5s ease-out;
+}
+/* the second contact us styles */
+.contact-us-two {
+    color: rgb(103, 27, 0);
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.accordion {
+    margin: 45px 0px;
+    border-bottom: 1px solid rgb(103, 27, 0);
+    text-transform: capitalize;
+}
+.title-icons {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.title-icons img {
+    float: right;
+    cursor: pointer;
+}
+.accordion .faq-expand, 
+.accordion .faq-expand2, 
+.accordion .faq-expand3,
+.accordion .faq-expand4
+{
+    display: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.9;
+    transform: rotate(360deg);
+    text-transform: lowercase;
+    /* transition: 3s; */
+    margin-top: 15px;
+}
+.icon-minus-plus .expand-less,
+ .icon-minus-plus .expand-less2, 
+.icon-minus-plus .expand-less3,
+.icon-minus-plus .expand-less4 
+{
+    display : none;
+}
